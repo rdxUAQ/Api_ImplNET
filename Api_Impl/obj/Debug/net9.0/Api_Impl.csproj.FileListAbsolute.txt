@@ -32,3 +32,4 @@ C:\Users\Rodrex25\Project c#\repositories\Api_Impl\Api_Impl\obj\Debug\net9.0\Api
 C:\Users\Rodrex25\Project c#\repositories\Api_Impl\Api_Impl\obj\Debug\net9.0\ref\Api_Impl.dll
 C:\Users\Rodrex25\Project c#\repositories\Api_Impl\Api_Impl\bin\Debug\net9.0\Data\Products.json
 C:\Users\Rodrex25\Project c#\repositories\Api_Impl\Api_Impl\bin\Debug\net9.0\Newtonsoft.Json.dll
+C:\Users\Rodrex25\Project c#\repositories\Api_Impl\Api_Impl\obj\Debug\net9.0\Api_Impl.sourcelink.json

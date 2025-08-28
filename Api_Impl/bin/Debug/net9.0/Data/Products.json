@@ -1,1 +1,62 @@
-"[\r\n    {\r\n        \"Id\": \"e1a1c7b2-8d4e-4a2e-9b1a-1f2a3b4c5d6e\",\r\n        \"Name\": \"Wireless Mouse\",\r\n        \"Description\": \"Ergonomic wireless mouse with adjustable DPI.\",\r\n        \"Stock\": 120\r\n    },\r\n    {\r\n        \"Id\": \"f2b2d8c3-9e5f-4b3f-8c2b-2g3h4i5j6k7l\",\r\n        \"Name\": \"Mechanical Keyboard\",\r\n        \"Description\": \"RGB backlit mechanical keyboard with blue switches.\",\r\n        \"Stock\": 75\r\n    },\r\n    {\r\n        \"Id\": \"a3c3e9d4-0f6g-5c4g-7d3c-3h4i5j6k7l8m\",\r\n        \"Name\": \"27-inch Monitor\",\r\n        \"Description\": \"Full HD IPS monitor with ultra-thin bezels.\",\r\n        \"Stock\": 40\r\n    },\r\n    {\r\n        \"Id\": \"b4d4f0e5-1g7h-6d5h-8e4d-4i5j6k7l8m9n\",\r\n        \"Name\": \"USB-C Hub\",\r\n        \"Description\": \"Multi-port USB-C hub with HDMI and Ethernet.\",\r\n        \"Stock\": 200\r\n    },\r\n    {\r\n        \"Id\": \"c5e5g1f6-2h8i-7e6i-9f5e-5j6k7l8m9n0o\",\r\n        \"Name\": \"External SSD\",\r\n        \"Description\": \"Portable 1TB external SSD with USB 3.2.\",\r\n        \"Stock\": 60\r\n    },\r\n    {\r\n        \"Id\": \"d6f6h2g7-3i9j-8f7j-0g6f-6k7l8m9n0o1p\",\r\n        \"Name\": \"Bluetooth Speaker\",\r\n        \"Description\": \"Waterproof Bluetooth speaker with 12-hour battery.\",\r\n        \"Stock\": 150\r\n    },\r\n    {\r\n        \"Id\": \"e7g7i3h8-4j0k-9g8k-1h7g-7l8m9n0o1p2q\",\r\n        \"Name\": \"Webcam\",\r\n        \"Description\": \"1080p HD webcam with built-in microphone.\",\r\n        \"Stock\": 90\r\n    },\r\n    {\r\n        \"Id\": \"f8h8j4i9-5k1l-0h9l-2i8h-8m9n0o1p2q3r\",\r\n        \"Name\": \"Gaming Headset\",\r\n        \"Description\": \"Surround sound gaming headset with noise cancellation.\",\r\n        \"Stock\": 110\r\n    },\r\n    {\r\n        \"Id\": \"g9i9k5j0-6l2m-1i0m-3j9i-9n0o1p2q3r4s\",\r\n        \"Name\": \"Smartphone Stand\",\r\n        \"Description\": \"Adjustable aluminum stand for smartphones and tablets.\",\r\n        \"Stock\": 180\r\n    },\r\n    {\r\n        \"Id\": \"h0j0l6k1-7m3n-2j1n-4k0j-0o1p2q3r4s5t\",\r\n        \"Name\": \"Portable Charger\",\r\n        \"Description\": \"10,000mAh portable charger with fast charging.\",\r\n        \"Stock\": 130\r\n    }\r\n]"
+[
+    {
+        "Id": "e1a1c7b2-8d4e-4a2e-9b1a-1f2a3b4c5d6e",
+        "Name": "Wireless Mouse",
+        "Description": "Ergonomic wireless mouse with adjustable DPI.",
+        "Stock": 120
+    },
+    {
+        "Id": "f2b2d8c3-9e5f-4b3f-8c2b-2g3h4i5j6k7l",
+        "Name": "Mechanical Keyboard",
+        "Description": "RGB backlit mechanical keyboard with blue switches.",
+        "Stock": 75
+    },
+    {
+        "Id": "a3c3e9d4-0f6g-5c4g-7d3c-3h4i5j6k7l8m",
+        "Name": "27-inch Monitor",
+        "Description": "Full HD IPS monitor with ultra-thin bezels.",
+        "Stock": 40
+    },
+    {
+        "Id": "b4d4f0e5-1g7h-6d5h-8e4d-4i5j6k7l8m9n",
+        "Name": "USB-C Hub",
+        "Description": "Multi-port USB-C hub with HDMI and Ethernet.",
+        "Stock": 200
+    },
+    {
+        "Id": "c5e5g1f6-2h8i-7e6i-9f5e-5j6k7l8m9n0o",
+        "Name": "External SSD",
+        "Description": "Portable 1TB external SSD with USB 3.2.",
+        "Stock": 60
+    },
+    {
+        "Id": "d6f6h2g7-3i9j-8f7j-0g6f-6k7l8m9n0o1p",
+        "Name": "Bluetooth Speaker",
+        "Description": "Waterproof Bluetooth speaker with 12-hour battery.",
+        "Stock": 150
+    },
+    {
+        "Id": "e7g7i3h8-4j0k-9g8k-1h7g-7l8m9n0o1p2q",
+        "Name": "Webcam",
+        "Description": "1080p HD webcam with built-in microphone.",
+        "Stock": 90
+    },
+    {
+        "Id": "f8h8j4i9-5k1l-0h9l-2i8h-8m9n0o1p2q3r",
+        "Name": "Gaming Headset",
+        "Description": "Surround sound gaming headset with noise cancellation.",
+        "Stock": 110
+    },
+    {
+        "Id": "g9i9k5j0-6l2m-1i0m-3j9i-9n0o1p2q3r4s",
+        "Name": "Smartphone Stand",
+        "Description": "Adjustable aluminum stand for smartphones and tablets.",
+        "Stock": 180
+    },
+    {
+        "Id": "h0j0l6k1-7m3n-2j1n-4k0j-0o1p2q3r4s5t",
+        "Name": "Portable Charger",
+        "Description": "10,000mAh portable charger with fast charging.",
+        "Stock": 130
+    }
+]
