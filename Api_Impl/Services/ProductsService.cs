@@ -25,8 +25,8 @@ namespace ApiImpl.Services
             //read json file for products
             try
             {
-                
-                 result = JsonConvert.DeserializeObject<List<Product>>(jsonProducts);
+
+                result = JsonConvert.DeserializeObject<List<Product>>(jsonProducts);
 
             }
             catch (Exception ex)
@@ -52,7 +52,7 @@ namespace ApiImpl.Services
             try
             {
 
-                result = JsonConvert.DeserializeObject<List<Product>>(jsonProducts) ?
+                result = JsonConvert.DeserializeObject<List<Product>>(jsonProducts)?
                         .FirstOrDefault(i => i.Id == Id);
 
 
@@ -88,7 +88,7 @@ namespace ApiImpl.Services
             if (product == null)
             {
                 return null;
-                
+
             }
 
             //set new values
@@ -100,7 +100,7 @@ namespace ApiImpl.Services
             try
             {
 
-                string updateJson = JsonConvert.SerializeObject(jsonProducts, Formatting.Indented);
+                string updateJson = JsonConvert.SerializeObject(products, Formatting.Indented);
 
                 await File.WriteAllTextAsync(productsPath, updateJson);
 
@@ -114,13 +114,62 @@ namespace ApiImpl.Services
 
 
             await Task.Delay(2000);
-            return  JsonConvert.DeserializeObject<List<Product>>(jsonProducts).FirstOrDefault(p => p.Id == Id);
+            return product;
 
         }
 
         public async Task<Product> PostProductAsync(Product product)
         {
-            throw new NotImplementedException();
+            var products = JsonConvert.DeserializeObject<List<Product>>(jsonProducts) ?? new List<Product>();
+
+            products.Add(product);
+
+            try
+            {
+
+                string updateJson = JsonConvert.SerializeObject(products, Formatting.Indented);
+
+                await File.WriteAllTextAsync(productsPath, updateJson);
+
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Error writing products JSON file.", ex);
+
+            }
+
+            return product;
+
+        }
+
+        public async Task<bool> DeleteProductByIdAsync(string Id)
+        {
+            var products = JsonConvert.DeserializeObject<List<Product>>(jsonProducts);
+
+
+            try
+            {
+
+                var product = products.FirstOrDefault(i => i.Id.Equals(Id));
+
+                products.Remove(product);
+
+                string updateJson = JsonConvert.SerializeObject(products, Formatting.Indented);
+
+                await File.WriteAllTextAsync(productsPath, updateJson);
+
+                return true;
+
+
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError("Error removing products JSON file.", ex);
+
+            }
+
+            return false;
         }
 
 

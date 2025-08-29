@@ -10,6 +10,9 @@ namespace ApiImpl.Interfaces
         public Task<Product> PostProductAsync(Product product);
         public Task<Product> UpdateProductAsync(string Id, Product product);
 
+        public Task<bool> DeleteProductByIdAsync(string Id);
+
+
     }
     
 }

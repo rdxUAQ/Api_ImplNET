@@ -22,6 +22,33 @@ namespace ApiImpl.Controllers
             _dtoValidation = dtoValidation;
         }
 
+        [HttpPost("create")]
+        public async Task<Product> postProductAsync([FromBody] ProductDto productDto)
+        {
+
+            List<ValidationResult> errors;
+            bool isValid = _dtoValidation.TryValidateDto(productDto, out errors);
+
+            if (!isValid)
+            {
+                return null;
+            }
+
+            Product product = new Product
+            {
+                Id = Guid.NewGuid().ToString(),
+                Name = productDto.Name,
+                Description = productDto.Description,
+                Stock = productDto.Stock
+
+            };
+
+            var result = await _prodServ.PostProductAsync(product);
+
+            return result;
+
+        }
+
 
         [HttpGet("all")]
         public async Task<List<Product>> getAllProductsAsync()
@@ -70,5 +97,12 @@ namespace ApiImpl.Controllers
 
             return result;
         }
+
+        [HttpDelete("delete/id/{id}")]
+        public async Task<bool> deleteByIdAsync(string Id)
+        {
+            return await _prodServ.DeleteProductByIdAsync(Id);
+        }
+
     }
 }
